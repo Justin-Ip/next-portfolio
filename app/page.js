@@ -41,7 +41,7 @@ export default function Home() {
                   About Me
                 </Typography>
                 <Typography variant="p" paragraph={true}>
-                  Hello, I'm Justin Ip, an engineering and additive manufacturing professional with a strong background in prototyping and product design. I'm proficient in 3D modeling using CAD software like SolidWorks, Creo ProE, Blender, and Rhino.
+                  Hello, I&apos;m Justin Ip, an engineering and additive manufacturing professional with a strong background in prototyping and product design. I&apos;m proficient in 3D modeling using CAD software like SolidWorks, Creo ProE, Blender, and Rhino.
 
 
                 </Typography>
