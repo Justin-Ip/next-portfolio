@@ -3,7 +3,7 @@ import Typewriter from "./components/FrontPageTypewriter";
 import Image from "next/image";
 import SkillCard from "./components/SkillCard";
 
-import profilePic from "../static/profile.svg";
+import profilePic from "../static/profile.jpeg";
 import React from "react";
 import ContactForm from "./components/ContactForm";
 
@@ -41,18 +41,9 @@ export default function Home() {
                   About Me
                 </Typography>
                 <Typography variant="p" paragraph={true}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Curabitur ac nulla ut orci sollicitudin lobortis et nec augue.
-                  Sed at tellus tristique, lacinia libero ut, sodales lorem.
-                  Proin placerat, lectus sed rutrum lobortis, odio mi congue
-                  dolor, sed tempor felis tellus a ex. Duis id arcu consequat,
-                  viverra quam non, congue lectus. Nunc nec eros nibh.
-                  Vestibulum ullamcorper scelerisque tortor, eu tincidunt massa
-                  auctor vel. Duis tempus nisi risus, sit amet tempor sapien
-                  eleifend eu. Donec a malesuada urna. Donec sit amet finibus
-                  lectus. Maecenas enim lacus, commodo at laoreet vitae,
-                  sagittis at turpis. Phasellus commodo velit eget quam varius
-                  ultrices. Phasellus laoreet tempor enim.
+                  Hello, I'm Justin Ip, an engineering and additive manufacturing professional with a strong background in prototyping and product design. I'm proficient in 3D modeling using CAD software like SolidWorks, Creo ProE, Blender, and Rhino.
+
+
                 </Typography>
               </Grid>
             </Grid>

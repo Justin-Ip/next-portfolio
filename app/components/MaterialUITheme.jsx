@@ -37,14 +37,14 @@ export default function ThemeRegistry(props) {
         ? {
             mode: "light",
             primary: {
-              main: "#790B0B",
+              main: "#060D0D",
             },
             secondary: {
-              main: "#692B2B",
+              main: "#FCF5E5",
             },
             background: {
-              default: "#fff",
-              paper: "#fff",
+              default: "FDFFF5",
+              paper: "#FCF5E5",
             },
             divider: "rgba(0, 0, 0, 0.12)",
             text: {
@@ -56,14 +56,14 @@ export default function ThemeRegistry(props) {
         : {
             mode: "dark",
             primary: {
-              main: "#692B2B",
+              main: "#71797E",
             },
             secondary: {
-              main: "#790B0B",
+              main: "#FFFFFF",
             },
             background: {
-              default: "#121212",
-              paper: "#121212",
+              default: "#060D0D",
+              paper: "#191970",
             },
             divider: "rgba(255, 255, 255, 0.12)",
             text: {

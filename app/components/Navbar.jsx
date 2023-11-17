@@ -27,7 +27,7 @@ import LightModeIcon from "@mui/icons-material/LightMode";
 import { useTheme } from "@mui/material/styles";
 import { ColorModeContext } from "./MaterialUITheme";
 
-const AppName = "Portfolio";
+const AppName = "Justin Ip";
 
 export default function Navbar() {
   const theme = useTheme();
@@ -70,7 +70,7 @@ export default function Navbar() {
   };
 
   return (
-    <AppBar position="sticky">
+    <AppBar position="sticky" /*color="secondary"*/>
       <nav>
         <Container maxWidth="xl">
           <Toolbar disableGutters>
@@ -89,7 +89,7 @@ export default function Navbar() {
               }}
             >
               <Link href="/" style={{ textDecoration: "none" }}>
-                {AppName}
+                {AppName} | Portfolio
               </Link>
             </Typography>
 

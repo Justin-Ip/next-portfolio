@@ -4,7 +4,7 @@ import { Container, Typography } from "@mui/material";
 import React from "react";
 import Typewriter from "typewriter-effect";
 
-const strings = ["Subtitle One", "Subtitle Two"];
+const strings = ["Mechanical Engineer", "3D Designer"];
 
 export default function NameTypewriter() {
   const [subtitleVisible, setSubtitleVisiblity] = React.useState(false);
@@ -23,9 +23,9 @@ export default function NameTypewriter() {
         <Typewriter
           onInit={(typewriter) => {
             typewriter
-              .typeString("Hello")
+              .typeString("Hello! I am")
               .pauseFor(500)
-              .typeString(" World!")
+              .typeString(" Justin")
               .pauseFor(500)
               .start()
               .callFunction(startSubtitle);
