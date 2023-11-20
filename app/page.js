@@ -94,7 +94,7 @@ export default function Home() {
                   backgroundSize: "contain",
                   backgroundOrigin: 'content-box', padding: '1em'
                 }}
-                image="next.svg"
+                image="jewelry.png"
                 projects={[
                   {
                     name: "Project",
