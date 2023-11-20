@@ -24,7 +24,7 @@ export default function Footer() {
             <IconButton aria-label="LinkedIn" href="https://www.linkedin.com/in/justin-ip/">
               <LinkedInIcon />
             </IconButton>
-            <IconButton aria-label="GitHub" href="">
+            <IconButton aria-label="GitHub" href="https://github.com/Justin-Ip">
               <GitHubIcon />
             </IconButton>
             <IconButton aria-label="Email" href="mailto:justinip44@gmail.com">
