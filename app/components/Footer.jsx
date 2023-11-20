@@ -21,13 +21,13 @@ export default function Footer() {
             alignItems="center"
             justifyContent="center"
           >
-            <IconButton aria-label="LinkedIn" href="">
+            <IconButton aria-label="LinkedIn" href="https://www.linkedin.com/in/justin-ip/">
               <LinkedInIcon />
             </IconButton>
             <IconButton aria-label="GitHub" href="">
               <GitHubIcon />
             </IconButton>
-            <IconButton aria-label="Email" href="">
+            <IconButton aria-label="Email" href="mailto:justinip44@gmail.com">
               <MailIcon />
             </IconButton>
           </Grid>
