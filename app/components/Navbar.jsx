@@ -19,10 +19,10 @@ import {
 } from "@mui/material";
 
 import MenuIcon from "@mui/icons-material/Menu";
-import DeveloperModeIcon from "@mui/icons-material/DeveloperMode";
-import WorkHistoryIcon from "@mui/icons-material/WorkHistory";
 import Brightness3Icon from "@mui/icons-material/Brightness3";
 import LightModeIcon from "@mui/icons-material/LightMode";
+import EngineeringIcon from '@mui/icons-material/Engineering';
+import ViewInArIcon from '@mui/icons-material/ViewInAr';
 
 import { useTheme } from "@mui/material/styles";
 import { ColorModeContext } from "./MaterialUITheme";
@@ -38,7 +38,7 @@ export default function Navbar() {
       name: "Projects",
       icon: (
         <Badge badgeContent={pathname == "/projects" ? 0 : 0} color="error">
-          <DeveloperModeIcon />
+          <ViewInArIcon />
         </Badge>
       ),
       href: "/projects",
@@ -47,7 +47,7 @@ export default function Navbar() {
       name: "Experiences",
       icon: (
         <Badge badgeContent={pathname == "/experiences" ? 0 : 0} color="error">
-          <WorkHistoryIcon />
+          <EngineeringIcon />
         </Badge>
       ),
       href: "/experiences",
