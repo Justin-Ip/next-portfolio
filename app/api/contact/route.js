@@ -7,21 +7,20 @@ export async function POST(request) {
   // TODO: Add server sided validation for empty emails.
 
   const transporter = nodemailer.createTransport({
-    service: "Gmail",
+    host: process.env.SMTP_HOST,
+    port: 465,
+    secure: true,
     auth: {
-      type: "OAuth2",
-      user: process.env.GMAIL_USER,
-      clientId: process.env.OAUTH_CLIENTID,
-      clientSecret: process.env.OAUTH_CLIENTSECRET,
-      refreshToken: process.env.REFRESH_TOKEN,
+      user: process.env.SMTP_USER,
+      pass: process.env.SMTP_PASS
     },
   });
 
   console.log("Attempting to send email with following data...\n", data);
 
   const mail = await transporter.sendMail({
-    from: process.env.GMAIL_USER,
-    to: process.env.GMAIL_USER,
+    from: process.env.SMTP_USER,
+    to: process.env.EMAIL_SENDTO,
     replyTo: data.email,
     subject: `[${data.name}] ${data.subject}`,
     text: data.message,
