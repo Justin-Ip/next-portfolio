@@ -44,7 +44,7 @@ export default function ThemeRegistry(props) {
             },
             background: {
               default: "FDFFF5",
-              paper: "#7DF9FF",
+              paper: "#FAD6A5",
             },
             divider: "rgba(0, 0, 0, 0.12)",
             text: {
