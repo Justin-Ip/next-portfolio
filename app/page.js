@@ -57,7 +57,7 @@ export default function Home() {
                 description={
                   "I am proficient in SolidWorks, excelling in 3D modeling, parametric design, and creating detailed engineering drawings.  With a keen eye for precision, I am adept at leveraging SolidWorks to bring innovative design concepts to life and ensure accuracy throughout the product development process."
                 }
-                sx={{ height: 200, backgroundSize: "contain", backgroundOrigin: 'content-box', padding: '1em' }}
+                sx={{ height: 200, backgroundSize: "contain", backgroundOrigin: 'content-box', pt: '1rem' }}
                 image="SolidWorks.png"
                 projects={[
                   {
@@ -74,7 +74,7 @@ export default function Home() {
                 sx={{
                   height: 200,
                   backgroundSize: "contain",
-                  backgroundOrigin: 'content-box', padding: '1em'
+                  backgroundOrigin: 'content-box', pt: '1rem' /*padding: '1em'*/
                 }}
                 image="3dprinting.png"
                 projects={[
@@ -92,7 +92,7 @@ export default function Home() {
                 sx={{
                   height: 200,
                   backgroundSize: "contain",
-                  backgroundOrigin: 'content-box', padding: '1em'
+                  backgroundOrigin: 'content-box', pt: '1rem'
                 }}
                 image="jewelry.png"
                 projects={[
