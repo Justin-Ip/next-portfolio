@@ -40,7 +40,7 @@ export default function ThemeRegistry(props) {
               main: "#060D0D",
             },
             secondary: {
-              main: "#FCF5E5",
+              main: "#90542F",
             },
             background: {
               default: "FDFFF5",
