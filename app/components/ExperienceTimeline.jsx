@@ -12,46 +12,86 @@ import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 export default function OppositeContentTimeline() {
   return (
     <Timeline position="alternate">
+
       <TimelineItem>
         <TimelineOppositeContent color="text.secondary">
           09:30 am
         </TimelineOppositeContent>
         <TimelineSeparator>
-          <TimelineDot />
+        <TimelineDot variant="outlined" color="primary"
+        sx={{ backgroundColor: '#00FFFF'}}
+        />
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent>Eat</TimelineContent>
       </TimelineItem>
+
       <TimelineItem>
         <TimelineOppositeContent color="text.secondary">
           10:00 am
         </TimelineOppositeContent>
         <TimelineSeparator>
-          <TimelineDot />
+          <TimelineDot  variant="outlined" color="primary"
+        sx={{ backgroundColor: '#00FFFF'}}
+        />
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent>Code</TimelineContent>
       </TimelineItem>
+
       <TimelineItem>
         <TimelineOppositeContent color="text.secondary">
-          12:00 am
+          10:00 am
         </TimelineOppositeContent>
         <TimelineSeparator>
-          <TimelineDot />
+          <TimelineDot  variant="outlined" color="primary"
+        sx={{ backgroundColor: '#00FFFF'}}
+        />
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent>Sleep</TimelineContent>
+        <TimelineContent>Code</TimelineContent>
       </TimelineItem>
+
       <TimelineItem>
         <TimelineOppositeContent color="text.secondary">
-          9:00 am
+          09:30 am
         </TimelineOppositeContent>
         <TimelineSeparator>
-          <TimelineDot />
+        <TimelineDot variant="outlined" color="primary"
+        sx={{ backgroundColor: '#00FFFF'}}
+        />
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent>Repeat</TimelineContent>
+        <TimelineContent>Eat</TimelineContent>
       </TimelineItem>
+
+      <TimelineItem>
+        <TimelineOppositeContent color="text.secondary">
+          10:00 am
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineDot  variant="outlined" color="primary"
+        sx={{ backgroundColor: '#00FFFF'}}
+        />
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent>Code</TimelineContent>
+      </TimelineItem>
+
+      <TimelineItem>
+        <TimelineOppositeContent color="text.secondary">
+          10:00 am
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineDot  variant="outlined" color="primary"
+        sx={{ backgroundColor: '#00FFFF'}}
+        />
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent>Code</TimelineContent>
+      </TimelineItem>
+
+
     </Timeline>
   );
 }
