@@ -46,7 +46,7 @@ export default function Navbar() {
     {
       name: "Experiences",
       icon: (
-        <Badge badgeContent={pathname == "/experiences" ? 0 : 0} color="error">
+        <Badge badgeContent={pathname == "/experiences" ? 0 : 1} color="error">
           <EngineeringIcon />
         </Badge>
       ),
@@ -193,17 +193,17 @@ export default function Navbar() {
                 }}
               >
                 <MenuItem onClick={handleCloseNavMenu}>
-                  <Link href="">
+                  <Link href="https://www.linkedin.com/in/justin-ip/">
                     <Typography align="center">LinkedIn</Typography>
                   </Link>
                 </MenuItem>
                 <MenuItem onClick={handleCloseNavMenu}>
-                  <Link href="">
+                  <Link href="https://github.com/Justin-Ip">
                     <Typography align="center">GitHub</Typography>
                   </Link>
                 </MenuItem>
                 <MenuItem onClick={handleCloseNavMenu}>
-                  <Link href="">
+                  <Link href="mailto:justinip44@gmail.com">
                     <Typography align="center">Email</Typography>
                   </Link>
                 </MenuItem>

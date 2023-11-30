@@ -1,97 +1,117 @@
 "use client"
 
 import * as React from 'react';
-import Timeline from '@mui/lab/Timeline';
-import TimelineItem from '@mui/lab/TimelineItem';
-import TimelineSeparator from '@mui/lab/TimelineSeparator';
-import TimelineConnector from '@mui/lab/TimelineConnector';
-import TimelineContent from '@mui/lab/TimelineContent';
-import TimelineDot from '@mui/lab/TimelineDot';
-import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
+import "./ExperienceTimeline.css"
 
-export default function OppositeContentTimeline() {
+import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
+
+import "react-vertical-timeline-component/style.min.css"
+
+import WorkIcon from '@mui/icons-material/Work';
+import SchoolIcon from '@mui/icons-material/School';
+import { Typography } from '@mui/material';
+
+export default function ExperienceTimeline() {
+  const elements = [
+    {
+      id: 1,
+      title: "Engineer",
+      location: "Manhattan",
+      description: "Designing Prototypes",
+      buttonText: "View projects",
+      date: "August 2022 - Present",
+      icon: "work"
+    },
+    {
+      id: 2,
+      title: "Engineer",
+      location: "Manhattan",
+      description: "Designing Prototypes",
+      buttonText: "View projects",
+      date: "August 2022 - Present",
+      icon: "work"
+    },
+    {
+      id: 3,
+      title: "Engineer",
+      location: "Manhattan",
+      description: "Designing Prototypes",
+      buttonText: "View projects",
+      date: "August 2022 - Present",
+      icon: "work"
+    },
+    {
+      id: 4,
+      title: "Engineer",
+      location: "Manhattan",
+      description: "Designing Prototypes",
+      buttonText: "View projects",
+      date: "August 2022 - Present",
+      icon: "work"
+    },
+    {
+      id: 5,
+      title: "Engineer",
+      location: "Manhattan",
+      description: "Designing Prototypes",
+      buttonText: "View projects",
+      date: "August 2022 - Present",
+      icon: "work"
+    },
+    {
+      id: 6,
+      title: "Stevens Insititute of Technology",
+      location: "Hoboken, New Jersey",
+      description:
+        "College - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
+      date: "2018 - 2023",
+      icon: "school",
+    },
+  ]
+
+  let workIconStyles = { background: "#008AD8"}
+  let schoolIconStyles = { background: "#9D1535"}
+
   return (
-    <Timeline position="alternate">
+    <div>
+    <VerticalTimeline animate={false}>
+      {
+        elements.map(element => {
+          let isWorkIcon = element.icon === "work"
+          let showButton = 
+            element.buttonText !== undefined && 
+            element.buttonText !== null && 
+            element.buttonText !=="";
 
-      <TimelineItem>
-        <TimelineOppositeContent color="text.secondary">
-          09:30 am
-        </TimelineOppositeContent>
-        <TimelineSeparator>
-        <TimelineDot variant="outlined" color="primary"
-        sx={{ backgroundColor: '#00FFFF'}}
-        />
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent>Eat</TimelineContent>
-      </TimelineItem>
+          return (
+            <VerticalTimelineElement
+              key={element.key}
+              date={element.date}
+              dateClassName="date"
+              iconStyle={isWorkIcon ? workIconStyles: schoolIconStyles}
+              icon={isWorkIcon ? <WorkIcon /> : <SchoolIcon />}
+            >
 
-      <TimelineItem>
-        <TimelineOppositeContent color="text.secondary">
-          10:00 am
-        </TimelineOppositeContent>
-        <TimelineSeparator>
-          <TimelineDot  variant="outlined" color="primary"
-        sx={{ backgroundColor: '#00FFFF'}}
-        />
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent>Code</TimelineContent>
-      </TimelineItem>
-
-      <TimelineItem>
-        <TimelineOppositeContent color="text.secondary">
-          10:00 am
-        </TimelineOppositeContent>
-        <TimelineSeparator>
-          <TimelineDot  variant="outlined" color="primary"
-        sx={{ backgroundColor: '#00FFFF'}}
-        />
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent>Code</TimelineContent>
-      </TimelineItem>
-
-      <TimelineItem>
-        <TimelineOppositeContent color="text.secondary">
-          09:30 am
-        </TimelineOppositeContent>
-        <TimelineSeparator>
-        <TimelineDot variant="outlined" color="primary"
-        sx={{ backgroundColor: '#00FFFF'}}
-        />
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent>Eat</TimelineContent>
-      </TimelineItem>
-
-      <TimelineItem>
-        <TimelineOppositeContent color="text.secondary">
-          10:00 am
-        </TimelineOppositeContent>
-        <TimelineSeparator>
-          <TimelineDot  variant="outlined" color="primary"
-        sx={{ backgroundColor: '#00FFFF'}}
-        />
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent>Code</TimelineContent>
-      </TimelineItem>
-
-      <TimelineItem>
-        <TimelineOppositeContent color="text.secondary">
-          10:00 am
-        </TimelineOppositeContent>
-        <TimelineSeparator>
-          <TimelineDot  variant="outlined" color="primary"
-        sx={{ backgroundColor: '#00FFFF'}}
-        />
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent>Code</TimelineContent>
-      </TimelineItem>
-
-
-    </Timeline>
+              <h3 className='vertical-timeline-element-title'>{element.title}</h3>
+              <h5 className="vertical-timeline-element-subtitle">
+                {element.location}  
+              </h5>
+              <p id="description">
+                {element.description}
+              </p> 
+              {showButton && (
+                <a 
+                  className={`button ${
+                    isWorkIcon ? "workButton" : "schoolButton"
+                  }`} 
+                  href="/">{element.buttonText}
+              </a>)}
+            
+            </VerticalTimelineElement>
+          );
+        })
+      }
+    </VerticalTimeline>
+    </div>
   );
 }
