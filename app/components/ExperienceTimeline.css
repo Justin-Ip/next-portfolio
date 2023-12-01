@@ -9,10 +9,12 @@ body {
     padding-top: 0.25em;
     color: rgb(0, 0, 0);
     font-weight: 500;
+    font-size: 21px;
     text-align  : left;
   }
   
   h5 {
+    font-size: 15px;
     padding-top: 0.25em;
     color: rgb(0, 0, 0);
     text-align  : left;
@@ -25,7 +27,7 @@ body {
   }
 
   .date {
-    color: rgb(201, 0, 0);
+    color: rgb(0, 0, 0);;
   }
 
   #description {
@@ -61,7 +63,7 @@ body {
     .vertical-timeline-element-date {
       display: block !important;
       float: none !important;
-      color: rgb(201, 0, 0);
+      color: rgb(0, 0, 255);
       margin-top: 1.5em;
     }
   }

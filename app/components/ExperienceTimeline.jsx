@@ -64,7 +64,8 @@ export default function ExperienceTimeline() {
       location: "Hoboken, New Jersey",
       description:
         "College - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
-      date: "2018 - 2023",
+      buttonText: "test",
+        date: "2018 - 2023",
       icon: "school",
     },
   ]
@@ -74,21 +75,22 @@ export default function ExperienceTimeline() {
 
   return (
     <div>
-    <VerticalTimeline animate={false}>
+    <VerticalTimeline animate={false} lineColor='#71797E'
+    iconStyle={{ background: 'rgb(237, 123, 53)', color: '#11287f' }}>
       {
         elements.map(element => {
-          let isWorkIcon = element.icon === "work"
+          let isWorkIcon = element.icon === "work";
           let showButton = 
             element.buttonText !== undefined && 
             element.buttonText !== null && 
-            element.buttonText !=="";
+            element.buttonText !== "";
 
           return (
             <VerticalTimelineElement
               key={element.key}
               date={element.date}
               dateClassName="date"
-              iconStyle={isWorkIcon ? workIconStyles: schoolIconStyles}
+              iconStyle={isWorkIcon ? workIconStyles : schoolIconStyles}
               icon={isWorkIcon ? <WorkIcon /> : <SchoolIcon />}
             >
 
