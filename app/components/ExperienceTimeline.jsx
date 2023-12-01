@@ -15,9 +15,9 @@ export default function ExperienceTimeline() {
   const elements = [
     {
       id: 1,
-      title: "Engineer",
-      location: "Manhattan",
-      description: "Designing Prototypes",
+      title: "Design Engineer",
+      location: "Eva Diamond Coporation",
+      description: "I specialize in jewelry design, utilizing SolidWorks and Rhino for 3D iterations, refining designs for optimal cohesion between gemstones and metals, and employing SLA technology with LD-002R LCD and Phrozen Sonic Mini 8K printers to bring creations to life .",
       buttonText: "View projects",
       date: "August 2022 - Present",
       icon: "work"
