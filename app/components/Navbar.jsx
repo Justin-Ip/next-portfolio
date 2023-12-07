@@ -46,7 +46,7 @@ export default function Navbar() {
     {
       name: "Experiences",
       icon: (
-        <Badge badgeContent={pathname == "/experiences" ? 0 : 1} color="error">
+        <Badge badgeContent={pathname == "/experiences" ? 0 : 0} color="error">
           <EngineeringIcon />
         </Badge>
       ),
