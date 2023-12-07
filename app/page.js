@@ -6,6 +6,7 @@ import SkillCard from "./components/SkillCard";
 import profilePic from "../static/profile.jpeg";
 import React from "react";
 import ContactForm from "./components/ContactForm";
+import HomePageImageList from "./components/HomePageImageList";
 
 export const metadata = {
   title: "Home",
@@ -44,6 +45,9 @@ export default function Home() {
                   I&apos;m an engineering and additive manufacturing professional with a strong background in prototyping and product design. I&apos;m proficient in 3D modeling using CAD software like SolidWorks, Creo ProE, Blender, and Rhino.
                 </Typography>
               </Grid>
+            </Grid>
+            <Grid container direction="row" justifyContent="center">
+              <HomePageImageList/>
             </Grid>
             <Grid
               container
