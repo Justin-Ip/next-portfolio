@@ -47,6 +47,10 @@ export default function Home() {
               </Grid>
             </Grid>
             <Grid container direction="row" justifyContent="center">
+            <Typography variant="p" marginBottom={5}>
+                This section is still work-in-progress.
+              </Typography>
+
               <HomePageImageList/>
             </Grid>
             <Grid
