@@ -24,17 +24,17 @@ export default function ExperienceTimeline() {
     },
     {
       id: 2,
-      title: "Engineer",
-      location: "Manhattan",
-      description: "Designing Prototypes",
+      title: "3D Lab",
+      location: "PROOF Lab",
+      description: "Managing Printers",
       buttonText: "View projects",
       date: "August 2022 - Present",
       icon: "work"
     },
     {
       id: 3,
-      title: "Engineer",
-      location: "Manhattan",
+      title: "3D Print Engineer",
+      location: "Makelab",
       description: "Designing Prototypes",
       buttonText: "View projects",
       date: "August 2022 - Present",
@@ -42,8 +42,8 @@ export default function ExperienceTimeline() {
     },
     {
       id: 4,
-      title: "Engineer",
-      location: "Manhattan",
+      title: "R&D Engineer Intern",
+      location: "Actasys",
       description: "Designing Prototypes",
       buttonText: "View projects",
       date: "August 2022 - Present",
@@ -51,8 +51,8 @@ export default function ExperienceTimeline() {
     },
     {
       id: 5,
-      title: "Engineer",
-      location: "Manhattan",
+      title: "Engineering Aide",
+      location: "Con Edison",
       description: "Designing Prototypes",
       buttonText: "View projects",
       date: "August 2022 - Present",
@@ -63,9 +63,23 @@ export default function ExperienceTimeline() {
       title: "Stevens Insititute of Technology",
       location: "Hoboken, New Jersey",
       description:
-        "College - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
-      buttonText: "test",
-        date: "2018 - 2023",
+        "B.E Mechanical Engineering",
+      description2: "237A-LLFO-JCPO JU",
+      buttonText: "Credits",
+      date: "2018 - 2023",
+      buttonLink: "https://cediploma.stevens.edu/validation/",
+      icon: "school",
+    },    
+    {
+      id: 6,
+      title: "Stevens Insititute of Technology",
+      location: "Hoboken, New Jersey",
+      description:
+        "Minor in Entreprenuership",
+      description2: "2378-G5LL-JTPP JU",
+      buttonText: "Credits",
+      date: "2018 - 2023",
+      buttonLink: "https://cediploma.stevens.edu/validation/",
       icon: "school",
     },
   ]
@@ -87,7 +101,7 @@ export default function ExperienceTimeline() {
 
           return (
             <VerticalTimelineElement
-              key={element.key}
+              key={element.id}
               date={element.date}
               dateClassName="date"
               iconStyle={isWorkIcon ? workIconStyles : schoolIconStyles}
@@ -101,12 +115,15 @@ export default function ExperienceTimeline() {
               <p id="description">
                 {element.description}
               </p> 
+              <p id="description">
+                {element.description2}
+              </p> 
               {showButton && (
                 <a 
                   className={`button ${
                     isWorkIcon ? "workButton" : "schoolButton"
                   }`} 
-                  href="/">{element.buttonText}
+                  href={element.buttonLink !== undefined ? element.buttonLink : "#" }>{element.buttonText}
               </a>)}
             
             </VerticalTimelineElement>
