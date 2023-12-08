@@ -111,16 +111,6 @@ export default function Home() {
                 ]}
               />
             </Grid>
-            <Grid
-              container
-              direction="row"
-              alignItems="baseline"
-              justifyContent="center"
-            >
-              <Typography variant="p">
-                This section is still work-in-progress.
-              </Typography>
-            </Grid>
             <ContactForm />
           </Grid>
         </Container>
