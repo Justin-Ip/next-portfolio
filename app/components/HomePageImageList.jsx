@@ -67,7 +67,7 @@ const itemData = [
     title: 'Coffee',
     rows: 2,
     cols: 2,
-    href: "#"
+    href: "/projects#additive-manufacturing"
   },
   {
     img: 'https://images.unsplash.com/photo-1533827432537-70133748f5c8',
