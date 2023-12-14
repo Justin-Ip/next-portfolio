@@ -12,7 +12,7 @@ import Link from "next/link";
 
 export default function SkillCard({ name, description, sx, image, projects }) {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 345, display: "flex", flexWrap: "wrap", flexDirection: "column", alignContent: "space-between", justifyContent: "space-between" }}>
       <CardMedia sx={sx} image={image} title={name} />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
